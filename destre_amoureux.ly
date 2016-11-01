@@ -43,7 +43,7 @@
     <d a' fis'> [e' <g,, b' g'>8]
     d'16 [<a' fis'> <g fis'> fis]
     <e g fis'>8 [e']
-    <b,, fis' b fis'>4\fermata\bar "" \break \mark \default
+    <b, fis' b fis'>4\fermata\bar "" \break \mark \default
     <d a' fis'>
     <d a' fis'>8 [<d a' fis'>]
     <b b' d> [<b b' d>]
