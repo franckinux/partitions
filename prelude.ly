@@ -29,7 +29,7 @@
     <b,-1 b'-0 g'-3>[fis''-2]
     fis,16-0 [e'-0 d-3 cis-2]
     <g-1 b-0> [cis-2 d-3 e-0]
-    <fis-2 fis,-0>8 [<e,-1 g'-3>]\bar "|"
+    <fis-2 fis,-0>8 [<e,-1 g'-4>]\bar "|"
     fis-0 [<a-3 fis'-2> g-1 e'-0]
     <fis,-0 cis'-1 a'-4>8. [g'16-2]
     fis-1 [e-0 fis8-1]
@@ -103,14 +103,14 @@
     <b-4 d-2> [cis-1]
     <fis,-3 ais-4> [<g-1 b-0>]
     <e,-0 e''-0> [g'-1]
-    <fis,-2 fis'-0 d'-4> [<a-0 e'-2 cis'-4>16 b'-0]\bar "" \break
-    <a-3 e'-0> [g-1 <b,-2 fis'-0 d'-3>8]
+    <fis,-2 fis'-0 d'-4> [<a-0 e'-2 cis'-3>16 b'-0]\bar "" \break
+    <a-3 e'-0> [g-1 <b,-2 fis'-0 d'-4>8]
     <fis-1 cis''-3> [<a-0 e'-2>16 b'-0]
     a-3 [g-1 <b,-2 fis'-0> e-3]
     d-0 [cis-4 \mark \default <g-2 b-1>8]
-    d''-3 [<e,,-0 e'-2 cis'-3>]
+    d''-4 [<e,,-0 e'-2 cis'-3>]
     b''16-0 [d,16-0 <cis-3 e'-0>8]
-    b16-1 [d'-3 <a,-0 e'-2 cis'-3>8]\bar "" \break
+    b16-1 [d'-4 <a,-0 e'-2 cis'-3>8]\bar "" \break
     b'16-0 [d,-0 <fis,-1 cis'-3 a'-2>8]
     <gis-3 b-1 gis'-1> ^\markup {\italic BII} [<a-4 cis-3>]
     <b-1 d-0 fis-0> [b'16-0 a,-0]
