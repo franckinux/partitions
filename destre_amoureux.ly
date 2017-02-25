@@ -21,7 +21,7 @@
 
   \relative c' {
     \mark \default
-    <d-0 a'-1 fis'-1>8 [<fis-3 a-2 a'-4>]
+    <d-0 a'-2 fis'-1>8 [<fis-3 a-2 a'-4>]
     \override TextSpanner #'(bound-details left text) = #"BII"
     <e-2 b'-0 g'-4>8. \startTextSpan [cis'16-1]
     <d,-0 d'-2 fis-1>8. [cis'16-1] \stopTextSpan
