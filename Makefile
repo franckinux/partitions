@@ -5,11 +5,20 @@ all: $(OBJS)
 creative-commons:
 	wget -nc http://mirrors.creativecommons.org/presskit/buttons/88x31/eps/by-nc.eps
 
+il_me_suffit.pdf: il_me_suffit.ly creative-commons
+	lilypond -I . $<
+	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/039v.png
+	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/040.png
+	convert -density 300 -quality 96 $@ 039v.png 040.png out.pdf
+	rm 039v.png 040.png
+	mv out.pdf $@
+
 destre_amoureux.pdf: destre_amoureux.ly creative-commons
 	lilypond -I . $<
 	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/051v.png
 	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/052.png
 	convert -density 300 -quality 96 $@ 051v.png 052.png out.pdf
+	rm 051v.png 052.png
 	mv out.pdf $@
 
 prelude.pdf: prelude.ly creative-commons
@@ -17,6 +26,7 @@ prelude.pdf: prelude.ly creative-commons
 	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/002v.png
 	wget -nc http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/003.png
 	convert -density 300 -quality 96 $@ 002v.png 003.png out.pdf
+	rm 002v.png 003.png
 	mv out.pdf $@
 
 toccata_arpeggiata.pdf: toccata_arpeggiata.ly
