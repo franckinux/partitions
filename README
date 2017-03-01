@@ -1,4 +1,5 @@
-Ce dépôt contient les partitions que j'ai transcrites à partir de tablatures.
+Ce dépôt contient les partitions que j'ai transcrites à partir de tablaturesi de
+luth.
 
 - Toccata arpeggiata de Johannes Hieronymus Kapsberger d'après Donald Sauter
   (http://www.donaldsauter.com/kap2.htm) ;
@@ -9,12 +10,25 @@ Ce dépôt contient les partitions que j'ai transcrites à partir de tablatures.
 - "Destre amoureux" anomyme paru dans la "Très brève et familière introduction"
   publiée en 1529 par Pierre Attaingnant
   (http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/,
-  pages 051v.png et 052.png).
+  pages 051v.png et 052.png) ;
+- "Il me suffit" de Claudin de Sermisy paru dans la "Très brève et familière
+  introduction" publiée en 1529 par Pierre Attaingnant
+  (http://www.gerbode.net/facsimiles/Attaingnant/tres_breve_et_familiere_1529/,
+  pages 039v.png et 040.png) ;
+- Courante de Jakub Polak Reys dit Jacques le Polonois parue dans "Delitae
+  Musicae" de Joachim van den Hove de 1612
+  (http://imslp.org/wiki/Special:ReverseLookup/307898).
 
 Le graveur de partition est Lilypond (http://lilypond.org/).
 
 Pour générer les partitions sous Linux au format pdf, lancer la commande :
 
 make clean all
+
+Les dépendances nécessaires sont :
+
+- lilypond ;
+- pdftk ;
+- wkhtmltopdf.
 
 Enjoy !

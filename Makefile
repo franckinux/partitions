@@ -1,4 +1,4 @@
-OBJS=destre_amoureux.pdf prelude.pdf toccata_arpeggiata.pdf
+OBJS=destre_amoureux.pdf prelude.pdf toccata_arpeggiata.pdf il_me_suffit.pdf courante.pdf
 
 all: $(OBJS)
 
@@ -34,6 +34,14 @@ toccata_arpeggiata.pdf: toccata_arpeggiata.ly
 	wkhtmltopdf -s A4 -T 10 -B 10 -d 300 http://www.donaldsauter.com/kap2.htm toccata_arpeggiata.donald_sauter.pdf
 	convert -density 300 -quality 96 $@ toccata_arpeggiata.donald_sauter.pdf out.pdf
 	rm -f toccata_arpeggiata.donald_sauter.pdf
+	mv out.pdf $@
+
+courante.pdf: courante.ly
+	lilypond -I . $<
+	wget -nc http://petrucci.mus.auth.gr/imglnks/usimg/a/ad/IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
+	pdftk IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf cat 131 output p131.pdf
+	convert -density 300 -quality 96 $@ p131.pdf out.pdf
+	rm -f p131.pdf
 	mv out.pdf $@
 
 .PHONY: clean
