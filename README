@@ -28,7 +28,10 @@ make clean all
 Les dépendances nécessaires sont :
 
 - lilypond ;
-- pdftk ;
+- GhostScript ;
+- ImageMagick ;
+- poppler
+- wget
 - wkhtmltopdf.
 
 Enjoy !

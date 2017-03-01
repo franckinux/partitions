@@ -39,9 +39,9 @@ toccata_arpeggiata.pdf: toccata_arpeggiata.ly
 courante.pdf: courante.ly
 	lilypond -I . $<
 	wget -nc http://petrucci.mus.auth.gr/imglnks/usimg/a/ad/IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
-	pdftk IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf cat 131 output p131.pdf
-	convert -density 300 -quality 96 $@ p131.pdf out.pdf
-	rm -f p131.pdf
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=131 -dLastPage=131 -sOutputFile=p131.pdf IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
+	pdfunite $@ p131.pdf out.pdf
+	rm -f p131.pdf IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
 	mv out.pdf $@
 
 .PHONY: clean
