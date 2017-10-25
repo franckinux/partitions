@@ -46,13 +46,11 @@ courante.pdf: courante.ly
 
 czarna-krowa.pdf: czarna-krowa.ly
 	lilypond -I . $<
-	wget -nc http://jbc.bj.uj.edu.pl/Content/328074/zip/
-	unzip 328074.zip
-	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf 328074/DIGMUZ000295.pdf
-	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=252 -sOutputFile=p252.pdf 328074/DIGMUZ000295.pdf
-	wget -nc http://www.gerbode.net/composers/Bakfark/pdf/czarna_krowa.pdf
-	pdfunite $@ czarna_krowa.pdf p4.pdf p252.pdf out.pdf
-	rm -rf czarna_krowa.pdf p4.pdf p252.pdf 328074
+	wget -nc http://jbc.bj.uj.edu.pl/Content/328074/DIGMUZ000295.pdf
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf DIGMUZ000295.pdf
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=252 -sOutputFile=p252.pdf DIGMUZ000295.pdf
+	pdfunite $@ p4.pdf p252.pdf out.pdf
+	rm -rf p4.pdf p252.pdf 328074
 	mv out.pdf $@
 
 .PHONY: clean
