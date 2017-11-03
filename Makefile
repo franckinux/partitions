@@ -1,4 +1,4 @@
-OBJS=destre_amoureux.pdf prelude.pdf toccata_arpeggiata.pdf il_me_suffit.pdf courante.pdf
+OBJS=destre_amoureux.pdf prelude.pdf toccata_arpeggiata.pdf il_me_suffit.pdf courante.pdf czarna-krowa.pdf
 
 all: $(OBJS)
 
@@ -36,7 +36,7 @@ toccata_arpeggiata.pdf: toccata_arpeggiata.ly
 	rm -f toccata_arpeggiata.donald_sauter.pdf
 	mv out.pdf $@
 
-courante.pdf: courante.ly
+courante.pdf: courante.ly creative-commons
 	lilypond -I . $<
 	wget -nc http://petrucci.mus.auth.gr/imglnks/usimg/a/ad/IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=131 -dLastPage=131 -sOutputFile=p131.pdf IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
@@ -44,7 +44,7 @@ courante.pdf: courante.ly
 	rm -f p131.pdf IMSLP307898-PMLP497960-Delitiae_musicae_Van_den_Hove_bsb00083380.pdf
 	mv out.pdf $@
 
-czarna-krowa.pdf: czarna-krowa.ly
+czarna-krowa.pdf: czarna-krowa.ly creative-commons
 	lilypond -I . $<
 	wget -nc http://jbc.bj.uj.edu.pl/Content/328074/DIGMUZ000295.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf DIGMUZ000295.pdf
