@@ -145,6 +145,6 @@
     <b,,-2 dis-1 fis-0 b-0 fis'-4>4\fermata
     \bar "|."
     \hideNotes c,
-    _\markup{ \epsfile #X #20 #"by-nc.eps" }
+    \markup{ \epsfile #X #20 #"by-nc.eps" }
   }
 }

@@ -48,9 +48,9 @@ czarna-krowa.pdf: czarna-krowa.ly
 	lilypond -I . $<
 	wget -nc http://jbc.bj.uj.edu.pl/Content/328074/DIGMUZ000295.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf DIGMUZ000295.pdf
-	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=252 -sOutputFile=p252.pdf DIGMUZ000295.pdf
-	pdfunite $@ p4.pdf p252.pdf out.pdf
-	rm -rf p4.pdf p252.pdf 328074
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=253 -sOutputFile=p252-253.pdf DIGMUZ000295.pdf
+	pdfunite $@ p4.pdf p252-253.pdf out.pdf
+	rm -rf p4.pdf p252-253.pdf 328074 DIGMUZ000295.pdf
 	mv out.pdf $@
 
 .PHONY: clean
