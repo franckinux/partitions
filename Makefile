@@ -50,7 +50,17 @@ czarna-krowa.pdf: czarna-krowa.ly creative-commons
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf DIGMUZ000295.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=253 -sOutputFile=p252-253.pdf DIGMUZ000295.pdf
 	pdfunite $@ p4.pdf p252-253.pdf out.pdf
-	rm -rf p4.pdf p252-253.pdf 328074 DIGMUZ000295.pdf
+	rm -rf p4.pdf p252-253.pdf DIGMUZ000295.pdf
+	mv out.pdf $@
+
+fantaisie-1.pdf: fantaisie-1.ly creative-commons
+	lilypond -I . $<
+	wget -nc http://hz.imslp.info/files/imglnks/usimg/e/e6/IMSLP489362-PMLP100799-Bakfark_V-Premier_livre_de_tabelature_de_luth.pdf
+	wget http://ks.petruccimusiclibrary.org/files/imglnks/usimg/2/2b/IMSLP272006-PMLP100797-bakfark_intabulatura.pdf
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=3 -dLastPage=5 -sOutputFile=p3-5.pdf IMSLP489362-PMLP100799-Bakfark_V-Premier_livre_de_tabelature_de_luth.pdf
+	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=3 -dLastPage=4 -sOutputFile=p3-4.pdf IMSLP272006-PMLP100797-bakfark_intabulatura.pdf
+	pdfunite $@ p3-5.pdf p3-4.pdf out.pdf
+	rm -rf p3-5.pdf p3-4.pdf IMSLP489362-PMLP100799-Bakfark_V-Premier_livre_de_tabelature_de_luth.pdf IMSLP272006-PMLP100797-bakfark_intabulatura.pdf
 	mv out.pdf $@
 
 .PHONY: clean
