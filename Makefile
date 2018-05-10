@@ -46,7 +46,7 @@ courante.pdf: courante.ly creative-commons
 
 czarna-krowa.pdf: czarna-krowa.ly creative-commons
 	lilypond -I . $<
-	wget -nc http://jbc.bj.uj.edu.pl/Content/328074/DIGMUZ000295.pdf
+	wget -nc https://jbc.bj.uj.edu.pl/Content/328074/PDF/DIGMUZ000295.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=4 -dLastPage=4 -sOutputFile=p4.pdf DIGMUZ000295.pdf
 	gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=252 -dLastPage=253 -sOutputFile=p252-253.pdf DIGMUZ000295.pdf
 	pdfunite $@ p4.pdf p252-253.pdf out.pdf

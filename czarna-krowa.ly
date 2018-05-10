@@ -75,7 +75,7 @@
     }
     \alternative {
     {
-    << {e'16 <d-3> e <fis-2> <g-2> <fis-1> g32 fis g <a-4>} \\ {<e,, e'-1>2 <e'-3>8 e <a,-1> a} \\ \set fingeringOrientations = #'(left) {b'4 s4 <g-1 e'-1 b'-4>4 <a-3 e'-1 c'-4>8 <a e' c'>} >>
+    << {e'16 <d-3> e <fis-2> <g-2> <fis-1> g32 fis g <a-4>} \\ {<e,, e'-1>2 <e'-3>8 e a, a} \\ \set fingeringOrientations = #'(left) {b'4 s4 <g-1 e'-1 b'-4>4 <a-3 e'-1 c'-4>8 <a e' c'>} >>
     }
     {
     <e, e'-1 b' e>1 \fermata

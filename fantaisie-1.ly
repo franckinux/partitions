@@ -49,7 +49,7 @@
     << {e'8 <d-1> <b e>4} \\ <b-4 g-3>2 >>
     << <fis'-1>2 \\ {s4 <b,,-1>} \\ \set fingeringOrientations = #'(left) {<d'-2>4. <cis-1>8} \\ \set fingeringOrientations = #'(left) <fis,-3>2 >>
     << <fis'-1>4 \\ {r4 <g,,-2>} \\ {b'8 <a-3> <b g'-4>4} >>
-    << {r4 e} \\ {<c,-3>4 e} \\ {<g-1>4. <a-3>8} >>
+    << {r4 e} \\ {<c,-3>4 <e-2>} \\ {<g-1>4. <a-3>8} >>
     << \set fingeringOrientations = #'(left) <g'-4>4 \\ {<b,,-2> d} \\ {r8 <cis'-3> <d-3 fis-2>4} \\ \set fingeringOrientations = #'(left) <g,-1>2 >>
     << \set fingeringOrientations = #'(left) {r8 <d'-3>8 <b e>4} \\ <g-1>2 >>
     << {<fis'-1>4. e8} \\ <fis,-3>2 \\ \set fingeringOrientations = #'(left) {r4 <a-2>} >>
@@ -74,8 +74,8 @@
     <g-3>8 <e'-2> <a, fis'-3 a-2 fis'-1>4
     << \set fingeringOrientations = #'(left) {<\parenthesize b' d-4>8 <cis-3> <b fis'-3>4} \\ \set fingeringOrientations = #'(left) {<b,-2 g'-1>4 <b-2>} \\ \set fingeringOrientations = #'(left) {s4 fis'8 <a-4>} >>
     << {<g-1>8 fis <g-1 b e>4} \\ <e-2>2 >>
-    << {<d'-2 fis-1>4 <a'-4>8 <cis,-1>} \\ {fis,4 d} >>
-    << {<b' g'-4>4 <fis'-3>} \\ {<e,-2> <b-1>} \\ \set fingeringOrientations = #'(left) {<g'-1>8 <a-3> b <cis-2>} >>
+    << {<fis'-1>4 <a-4>4} \\ {fis,4 d} \\ \set fingeringOrientations = #'(left) {<d'-2>4. <cis-1>8} >>
+    << {<b g'-4>4 <fis'-3>} \\ {<e,-2> <b-1>} \\ \set fingeringOrientations = #'(left) {<g'-1>8 <a-3> b <cis-2>} >>
     <d-4>8 <a-3> <d, fis b fis'-1>4
     << \set fingeringOrientations = #'(left) {e'4 <g-4>} \\ \set fingeringOrientations = #'(left) <e,-2>2 \\ \set fingeringOrientations = #'(left) {<g-1 b>4. <a-3 cis-2>8} >>
     << {r4 fis'-1} \\ {d, d} \\ {<b'-4 d-2>8 <a-2 cis-1> <b-4 d-2> <a-3>} >>
@@ -86,7 +86,7 @@
     << {b4 <e,-2 a-3 c-1>} \\ {<g,-3> a} \\ {<g'-1>8 fis} >>
     << {r8 b <d, g-1 b>4} \\ {<b-2> <g-3>} \\ {<d' fis>} >>
     << {r8 <a'-4>16 <g-1> <e-2 a-4>4} \\ <c-3>2 \\ \set fingeringOrientations = #'(left) <e-2>4 >>
-    << {<g-1 b>8 <cis-4> <d-4> b} \\ {<b,-2 e-3>4 <d fis>} >>
+    << {b'8 <cis-4> <d-4> b} \\ <b,-2>2 \\ \set fingeringOrientations = #'(left)  {<e-3 g-1>4 <d fis>} >>
     << {<a'-3 cis-2> <e-1 b'-0>} \\ {e, <g-2>} \\ \set fingeringOrientations = #'(left) {<e'-1>8 d <cis-3> <b-1>} >>
     << {r8. <ais'-4>16 b ais b32 ais <gis-1> ais} \\ {<fis,-1 cis'-2 fis-3>2} >>
     <b-1 b'>4 fis'
@@ -128,14 +128,14 @@
     << {r4 <b'-4>} \\ <b,,-1 b'-4>2 \\ \set fingeringOrientations = #'(left) {<d'-2>8 <cis-1> b <a-3>} >>
     << {r8 <a'-4> <g-2> <fis-1>} \\ {<g,-1> fis <e-1 e'-4>4} >>
     << {r4 <a'-4>} \\ {<a,-2>4. <g-3>8} \\ \set fingeringOrientations = #'(left) {e' <d-3> <cis-1> b} >>
-    << {r8 <g'-2> <fis-1> e} \\ {<fis,-3> <e-1> <d d'-3>4} \\ <a'-1>2 >>
+    << {r8 <g'-4> <fis-2> e} \\ {<fis,-3> <e-1> <d d'-3>4} \\ <a'-2>2 >>
     << {r4 <d-1 g-1>} \\ {<d-3>8 <cis-1> <b-3> <a-1>} >>
     << {r8 <cis-2> <b e>4} \\ <g-1>2 >>
-    << {<a'-4>8 <g-2> <fis-2> e} \\ {<fis, cis'-1>4 <b, \parenthesize b' d-3>} >>
-    << {<d'-1>4 e} \\ {<g,-3 b-4>8 <fis-2 a-1> <e-2 g-1> <d fis>} >>
+    << {<a'-4>8 <g-2> <fis-2> e} \\ {<fis, cis'-1>4 <b,-1 \parenthesize b' d-3>} >>
+    << {<d'-1>4 e} \\ {<g,-3 b-4>8 <fis-3 a-2> <e-3 g-2> <d fis>} >>
     << {s4 <a''-4>} \\ {<cis,,-4>8 <b-1> <a fis'>4} \\ \set fingeringOrientations = #'(left) {r8 <d'-3> <cis-1> b} \\ \set fingeringOrientations = #'(left) <e,-2>4 >>
     << {r8 <g'-4> <fis-2> e} \\ {<d,-3>4. <cis-3>8} \\ {<fis-2> <e-2> d <e-1>} \\ \set fingeringOrientations = #'(left) {<a-1>4 <d-4>} >>
-    << {r4 <g-4>} \\ {<b,,-2> <g-3>8 <fis-2>} \\ {<fis' d'-4> <e-1 cis'-1> <g-1 b> <a-3>} >>
+    << {r4 <g-4>} \\ {<b,,-2> <g-3>8 <fis-2>} \\ {<fis' d'-4> <e-3 cis'-4> <g-1 b> <a-3>} >>
     << {s4 <g'-4>} \\ e,,2 \\ {<g'-1>8 <fis-4 a-3> b <cis-3>} \\ \set fingeringOrientations = #'(left) {s4 <e,-2>4} >>
     << {<d'-3 fis-2>4. <cis-2 e>8} \\ <b,-1>2 \\ {d4 fis} >>
     << {<d'-1>8 e <fis-1>4} \\ {<g,-3 b-4> <d fis b>} >>
