@@ -34,7 +34,7 @@
     << {a'4.^\markup { \italic BII }} \\ {<a, cis e>4 a8} >>
     <a cis e a>4.^\markup { \italic BII } \bar "||"
     e''16 [f e d c b] \mark \default
-    << {a g a b c a-3} \\ {a,4.} >>
+    << {a g a <b-\rightHandFinger #4 > <c-\rightHandFinger #3 > a-3} \\ {a,4.} >>
     << {b'16 [a gis a b gis]} \\ {e4.-2} >>
     \override TextSpanner #'(bound-details left text) = #"BII"
     << {a16 [b c d e fis-2]} \\ {<a,, e'>4.} >>
@@ -57,7 +57,7 @@
     << {<gis b e>4.} \\ {e4.} >>
     << {<g b e>8. [f'16 g8]} \\ {e,,4.} >>
     << {<a' c f>4^\markup { \italic BI } <g c e>8} \\ {f,4 c'8} >>
-    << {<f a d>4 <c g' c>8~} \\ {\parenthesize d4 e,8} >>
+    << {<\parenthesize f a-2 d-4>4 <c g' c>8~} \\ {d4 e,8} >>
     << {<c' g' c>8 [<d g b>8. a'32 b]} \\ {f,8-1 g4-3} >>
     << {<g' c>8 [g16 f e d] } \\ {c4.} >> \mark \default
     <<  {r4 g''8} \\ {c,,4 r8} >>
